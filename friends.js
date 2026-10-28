@@ -15,7 +15,7 @@ const friends = [
   {
     id: "friend-1",
     name: "Matthew",
-    message: `Emily, you are so altruistic, potential, and beautiful! I love you pookie and wish you nothing but success. I'll always cherish our memories from going to Rapids together. Happy birthday queen! ♡`,
+    message: `Emily, you are so altruistic, potential, and beautiful! I love you pookie and wish you nothing but success. I'll always cherish our memories from going to Rapids together. Happy birthday querida!`,
     animal: {
       name: "Cheetah",
       reason: "Because you're fierce, stylish, and cool.",
