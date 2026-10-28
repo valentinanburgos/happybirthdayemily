@@ -236,31 +236,68 @@
     ctx.restore();
   }
 
-  function drawSnakePart(part, index) {
-    const pad = index === 0 ? 2 : 3;
-    const x = part.x * cell + pad;
-    const y = part.y * cell + pad;
-    const size = cell - pad * 2;
-    ctx.fillStyle = index === 0 ? "#c64f83" : (index % 2 ? "#e98ab0" : "#df78a1");
-    ctx.beginPath();
-    ctx.roundRect(x, y, size, size, index === 0 ? 7 : 5);
-    ctx.fill();
-    if (index === 0) {
-      // Tiny bow.
-      ctx.fillStyle = "#fff9f0";
+  
+function drawSnakePart(part, index) {
+  const pad = index === 0 ? 2 : 3;
+  const x = part.x * cell + pad;
+  const y = part.y * cell + pad;
+  const size = cell - pad * 2;
+
+  // Soft, rounded pink body
+  ctx.fillStyle = index === 0 ? "#d96b9a" : "#e98ab0";
+  ctx.beginPath();
+  ctx.roundRect(x, y, size, size, 7);
+  ctx.fill();
+
+  // Tiny white flower on the head
+  if (index === 0) {
+    const cx = x + size / 2;
+    const cy = y + size / 2;
+
+    // Flower petals
+    ctx.fillStyle = "#fff9f0";
+    for (let i = 0; i < 5; i++) {
+      const angle = (i * Math.PI * 2) / 5;
       ctx.beginPath();
-      ctx.arc(x + size * .35, y + size * .22, 2.1, 0, Math.PI * 2);
-      ctx.arc(x + size * .65, y + size * .22, 2.1, 0, Math.PI * 2);
-      ctx.fill();
-      ctx.fillStyle = "#593849";
-      const eye1 = direction.x === 1 ? x + size * .72 : direction.x === -1 ? x + size * .25 : x + size * .34;
-      const eye2 = direction.x === 1 ? x + size * .72 : direction.x === -1 ? x + size * .25 : x + size * .66;
-      ctx.beginPath();
-      ctx.arc(eye1, y + size * .58, 1.4, 0, Math.PI * 2);
-      ctx.arc(eye2, y + size * .78, 1.4, 0, Math.PI * 2);
+      ctx.arc(
+        cx + Math.cos(angle) * 4,
+        cy + Math.sin(angle) * 4,
+        2.5,
+        0,
+        Math.PI * 2
+      );
       ctx.fill();
     }
+
+    // Flower center
+    ctx.fillStyle = "#f5cc68";
+    ctx.beginPath();
+    ctx.arc(cx, cy, 2, 0, Math.PI * 2);
+    ctx.fill();
+
+    // Two simple dark eyes
+    ctx.fillStyle = "#593849";
+    const eyeOffset = size * 0.23;
+    const eyeRadius = 1.5;
+
+    let eye1, eye2;
+
+    if (direction.x !== 0) {
+      eye1 = { x: cx, y: cy - eyeOffset };
+      eye2 = { x: cx, y: cy + eyeOffset };
+    } else {
+      eye1 = { x: cx - eyeOffset, y: cy };
+      eye2 = { x: cx + eyeOffset, y: cy };
+    }
+
+    [eye1, eye2].forEach(eye => {
+      ctx.beginPath();
+      ctx.arc(eye.x, eye.y, eyeRadius, 0, Math.PI * 2);
+      ctx.fill();
+    });
   }
+}
+
 
   function draw() {
     ctx.clearRect(0, 0, canvas.width, canvas.height);
