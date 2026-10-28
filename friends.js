@@ -27,11 +27,7 @@ const friends = [
   {
     id: "friend-2",
     name: "Liz",
-    message: `Emily, you're so silly, SUPER PRETTY, and genuine. 
-    Happy birthday my pookie wooskie trooskie dooskie. I thank God 
-    for placing you in my life, you are very dear and special to me. 
-    I wish you the very best on any and every endeavor of life. May 
-    God continue to bless you for many more years to come, te amo pookie. ♡`,
+    message: `Emily, you're so silly, SUPER PRETTY, and genuine. Happy birthday my pookie wooskie trooskie dooskie. I thank God for placing you in my life, you are very dear and special to me. I wish you the very best on any and every endeavor of life. May God continue to bless you for many more years to come, te amo pookie. ♡`,
     animal: {
       name: "Calico cat",
       reason: "Because you're unique, whimsical, and bold.",
