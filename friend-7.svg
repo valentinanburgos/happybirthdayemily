@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 190 190" role="img" aria-label="Bumblebee placeholder illustration">
+<rect width="190" height="190" rx="22" fill="#f7df73" opacity=".28"/>
+<circle cx="25" cy="25" r="3" fill="#e98ab0"/><circle cx="162" cy="30" r="4" fill="#e98ab0"/><path d="M24 153 Q35 141 44 153 Q35 164 24 153" fill="#c9d9c0"/>
+<ellipse cx="95" cy="112" rx="38" ry="29" fill="#ffe36f" stroke="#9b7941" stroke-width="2"/><path d="M79 86 Q70 111 79 137 M105 84 Q96 111 105 140" stroke="#5d4b3a" stroke-width="10"/><ellipse cx="74" cy="73" rx="20" ry="13" transform="rotate(-28 74 73)" fill="#fff" opacity=".9"/><ellipse cx="111" cy="73" rx="20" ry="13" transform="rotate(28 111 73)" fill="#fff" opacity=".9"/><circle cx="83" cy="105" r="4" fill="#5d4b3a"/><circle cx="107" cy="105" r="4" fill="#5d4b3a"/><path d="M87 119 Q95 126 103 119" fill="none" stroke="#5d4b3a" stroke-width="2" stroke-linecap="round"/><path d="M85 83 Q78 65 68 66 M105 83 Q112 65 122 66" fill="none" stroke="#9b7941" stroke-width="3" stroke-linecap="round"/>
+<path d="M84 48 Q75 34 65 44 Q63 54 84 62 Q105 54 103 44 Q93 34 84 48Z" fill="#e98ab0" stroke="#fff9f0" stroke-width="2" transform="translate(10 -3) scale(.8)"/>
+</svg>

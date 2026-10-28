@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 190 190" role="img" aria-label="Cat placeholder illustration">
+<rect width="190" height="190" rx="22" fill="#f7d7e4" opacity=".28"/>
+<circle cx="25" cy="25" r="3" fill="#e98ab0"/><circle cx="162" cy="30" r="4" fill="#e98ab0"/><path d="M24 153 Q35 141 44 153 Q35 164 24 153" fill="#c9d9c0"/>
+<path d="M56 92 L53 54 L82 72 Q95 68 108 72 L137 53 L132 96" fill="#fff7f5" stroke="#bc7391" stroke-width="3" stroke-linejoin="round"/><circle cx="94" cy="108" r="42" fill="#fff7f5"/><path d="M77 105 Q84 97 90 105" fill="none" stroke="#6b4557" stroke-width="3" stroke-linecap="round"/><path d="M101 105 Q108 97 115 105" fill="none" stroke="#6b4557" stroke-width="3" stroke-linecap="round"/><path d="M90 119 L98 119 L94 124 Z" fill="#e98ab0"/><path d="M94 124 Q88 132 82 126 M94 124 Q100 132 106 126" fill="none" stroke="#6b4557" stroke-width="2" stroke-linecap="round"/><path d="M60 119 L80 122 M60 128 L80 127 M108 122 L129 118 M108 127 L129 129" stroke="#bc7391" stroke-width="2" stroke-linecap="round"/>
+<path d="M84 48 Q75 34 65 44 Q63 54 84 62 Q105 54 103 44 Q93 34 84 48Z" fill="#e98ab0" stroke="#fff9f0" stroke-width="2" transform="translate(10 -3) scale(.8)"/>
+</svg>

@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 190 190" role="img" aria-label="Duck placeholder illustration">
+<rect width="190" height="190" rx="22" fill="#fff0a8" opacity=".28"/>
+<circle cx="25" cy="25" r="3" fill="#e98ab0"/><circle cx="162" cy="30" r="4" fill="#e98ab0"/><path d="M24 153 Q35 141 44 153 Q35 164 24 153" fill="#c9d9c0"/>
+<ellipse cx="94" cy="118" rx="37" ry="30" fill="#ffe986"/><circle cx="94" cy="87" r="31" fill="#ffe986"/><circle cx="84" cy="83" r="3.5" fill="#6b4557"/><circle cx="105" cy="83" r="3.5" fill="#6b4557"/><path d="M88 94 Q95 88 102 94 L95 102 Z" fill="#e99a65"/><path d="M64 124 Q42 113 49 99 Q66 102 76 117" fill="#f8dc75"/><path d="M78 145 L72 155 M107 145 L113 155" stroke="#d7a34d" stroke-width="4" stroke-linecap="round"/>
+<path d="M84 48 Q75 34 65 44 Q63 54 84 62 Q105 54 103 44 Q93 34 84 48Z" fill="#e98ab0" stroke="#fff9f0" stroke-width="2" transform="translate(10 -3) scale(.8)"/>
+</svg>

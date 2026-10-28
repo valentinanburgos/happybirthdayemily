@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f9e2ec">
+  <meta name="description" content="A little birthday garden made just for Emily.">
+  <title>Emily's Little Garden ♡</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="friends.js" defer></script>
+  <script src="game.js" defer></script>
+</head>
+<body>
+  <div class="page-sparkles" aria-hidden="true">✿　♡　✧　୨୧　✧　♡　✿</div>
+  <main class="app-shell">
+    <header class="site-header">
+      <div class="brand-mark" aria-hidden="true">୨୧</div>
+      <div>
+        <p class="eyebrow">A tiny birthday surprise</p>
+        <h1>Emily's Little Garden</h1>
+      </div>
+      <button id="letters-button" class="icon-button" type="button" aria-label="Open your scrapbook" title="Your scrapbook">♡</button>
+    </header>
+
+    <section id="welcome-screen" class="screen welcome-screen active" aria-labelledby="welcome-title">
+      <div class="welcome-flower flower-one" aria-hidden="true">✿</div>
+      <div class="welcome-flower flower-two" aria-hidden="true">❀</div>
+      <div class="hero-bow" aria-hidden="true">୨୧</div>
+      <p class="eyebrow">Made with lots of love</p>
+      <h2 id="welcome-title">A little garden,<br><span>made just for Emily.</span></h2>
+      <p class="intro-copy">Collect flowers, open little letters from your favorite people, and discover a very special surprise at the end.</p>
+      <button id="start-button" class="primary-button" type="button">Enter the garden ♡</button>
+      <p class="tiny-note">A tiny game, a whole lot of love.</p>
+    </section>
+
+    <section id="game-screen" class="screen game-screen" aria-labelledby="game-heading">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">Level: lovely little garden</p>
+          <h2 id="game-heading">Collect some flowers</h2>
+        </div>
+        <div class="score-pill">✿ <span id="score">0</span></div>
+      </div>
+      <p class="helper-copy">Use the arrow keys or WASD. On a phone, use the buttons below.</p>
+      <div class="game-frame">
+        <canvas id="game-canvas" width="480" height="480" aria-label="Snake game board"></canvas>
+        <div id="game-overlay" class="game-overlay hidden">
+          <div class="overlay-card">
+            <p class="eyebrow">A tiny pause</p>
+            <h3 id="overlay-title">Oopsie! ♡</h3>
+            <p id="overlay-copy">Let's try again.</p>
+            <button id="overlay-button" class="primary-button" type="button">Try again</button>
+          </div>
+        </div>
+      </div>
+      <div class="game-status">
+        <span id="progress-text">Letters discovered: 0 / 7</span>
+        <span id="next-letter-text">A little surprise is waiting…</span>
+      </div>
+      <div class="d-pad" aria-label="Game direction controls">
+        <button type="button" data-direction="up" aria-label="Move up">↑</button>
+        <div class="d-pad-middle">
+          <button type="button" data-direction="left" aria-label="Move left">←</button>
+          <button type="button" data-direction="down" aria-label="Move down">↓</button>
+          <button type="button" data-direction="right" aria-label="Move right">→</button>
+        </div>
+      </div>
+      <div class="game-actions">
+        <button id="pause-button" class="secondary-button" type="button">Pause</button>
+        <button id="restart-button" class="text-button" type="button">Restart game</button>
+      </div>
+    </section>
+
+    <section id="letter-screen" class="screen letter-screen" aria-labelledby="letter-heading">
+      <div class="letter-paper">
+        <div class="paper-bow" aria-hidden="true">୨୧</div>
+        <p class="eyebrow">A little note for you</p>
+        <h2 id="letter-heading">Dear Emily,</h2>
+        <p id="letter-message" class="letter-message"></p>
+        <div class="letter-divider">✿　♡　✿</div>
+        <div class="animal-feature">
+          <img id="letter-animal-image" src="assets/animals/friend-1.svg" alt="Animal chosen to represent Emily">
+          <div>
+            <p class="eyebrow">I think you'd be a...</p>
+            <h3 id="letter-animal-name">A little bunny</h3>
+            <p id="letter-animal-reason"></p>
+          </div>
+        </div>
+        <p id="letter-from" class="letter-signature">Love, your friend ♡</p>
+        <button id="continue-button" class="primary-button" type="button">Back to the garden ♡</button>
+      </div>
+    </section>
+
+    <section id="gallery-screen" class="screen gallery-screen" aria-labelledby="gallery-heading">
+      <p class="eyebrow">A scrapbook of how we're seeing you</p>
+      <h2 id="gallery-heading">Emily's animal kingdom</h2>
+      <p class="intro-copy">Every animal was picked by someone who loves you. Tap a card to revisit their note.</p>
+      <div id="animal-gallery" class="animal-gallery"></div>
+      <button id="reveal-button" class="primary-button" type="button">Okay, show me the creature! ♡</button>
+    </section>
+
+    <section id="final-screen" class="screen final-screen" aria-labelledby="final-heading">
+      <div class="final-confetti" aria-hidden="true">✿　✧　♡　✧　❀</div>
+      <p class="eyebrow">The most Emily thing imaginable</p>
+      <h2 id="final-heading">Introducing...</h2>
+      <h3 class="chimera-title">The Emily Chimera!</h3>
+      <div class="chimera-frame">
+        <img id="chimera-image" src="assets/animals/emily-chimera.png" alt="A collage combining the animals Emily's friends chose">
+        <div id="chimera-placeholder" class="chimera-placeholder">
+          <span>୨୧</span>
+          <strong>Your masterpiece goes here!</strong>
+          <small>Replace assets/animals/emily-chimera.png with your finished collage.</small>
+        </div>
+      </div>
+      <p id="final-message" class="final-message"></p>
+      <div class="final-actions">
+        <button id="revisit-button" class="primary-button" type="button">Read all your letters again ♡</button>
+        <button id="play-again-button" class="secondary-button" type="button">Play again</button>
+      </div>
+      <p class="tiny-note">Made with love, flowers, and a suspicious number of animals.</p>
+    </section>
+
+    <section id="scrapbook-screen" class="screen scrapbook-screen" aria-labelledby="scrapbook-heading">
+      <p class="eyebrow">Keep these close</p>
+      <h2 id="scrapbook-heading">Your little scrapbook</h2>
+      <p class="intro-copy">All the notes you've opened so far, in one place.</p>
+      <div id="scrapbook-list" class="scrapbook-list"></div>
+      <button id="scrapbook-back-button" class="secondary-button" type="button">Back ♡</button>
+    </section>
+
+    <footer class="site-footer">a little gift for Emily <span>♡</span></footer>
+  </main>
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+</body>
+</html>
