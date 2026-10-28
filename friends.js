@@ -42,11 +42,12 @@ const friends = [
   },
   {
     id: "friend-3",
-    name: "Friend Three",
-    message: `My favorite thing about you is [personal quality]. I'll always smile when I think about [your memory together]. I hope your birthday is as lovely as you are! ♡`,
+    name: "Caelyn",
+    message: `Happy birthday, Emily! You deserve all the best things life has to offer. 
+    You are beautiful, kind, and radiant. I can always trust in you for a good convo. Love you! ♡`,
     animal: {
-      name: "Golden Retriever",
-      reason: "Because you make people feel welcome and loved.",
+      name: "Red Panda",
+      reason: "Because you're warm, kind, and give a red panda vibe.",
       image: "assets/animals/friend-3.svg",
       alt: "A golden retriever chosen to represent Emily"
     },
@@ -54,13 +55,18 @@ const friends = [
   },
   {
     id: "friend-4",
-    name: "Friend Four",
-    message: `Emily, I'm grateful for the way you [something you appreciate]. One memory I'll always treasure is [memory]. You deserve so much happiness this year. ♡`,
+    name: "Tina",
+    message: `Emily thank you so much for being real, joyful, and relatable. 
+    I love hanging out with you and talking to you. You're so fun and funny, and 
+    yet so grouned and down to earth. You are truly one of a kind, and whenever we 
+    talk I feel like I can tell you anything. One memory 
+    I'll always treasure is talking at Theo's restaurant. You deserve so much happiness 
+    this year and every year. Happy birthday! ♡`,
     animal: {
-      name: "Duck",
-      reason: "Because [your friend's explanation goes here].",
+      name: "Yellow kitten",
+      reason: "Because you're full of energy, you give a yellow vibe, and you're SOU KYUTE.",
       image: "assets/animals/friend-4.svg",
-      alt: "A duck chosen to represent Emily"
+      alt: "A kitten chosen to represent Emily"
     },
     flowerThreshold: 12
   },
