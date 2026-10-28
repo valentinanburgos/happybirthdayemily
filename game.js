@@ -249,32 +249,6 @@ function drawSnakePart(part, index) {
   ctx.roundRect(x, y, size, size, 7);
   ctx.fill();
 
-  // Tiny white flower on the head
-  if (index === 0) {
-    const cx = x + size / 2;
-    const cy = y + size / 2;
-
-    // Flower petals
-    ctx.fillStyle = "#fff9f0";
-    for (let i = 0; i < 5; i++) {
-      const angle = (i * Math.PI * 2) / 5;
-      ctx.beginPath();
-      ctx.arc(
-        cx + Math.cos(angle) * 4,
-        cy + Math.sin(angle) * 4,
-        2.5,
-        0,
-        Math.PI * 2
-      );
-      ctx.fill();
-    }
-
-    // Flower center
-    ctx.fillStyle = "#f5cc68";
-    ctx.beginPath();
-    ctx.arc(cx, cy, 2, 0, Math.PI * 2);
-    ctx.fill();
-
     // Two simple dark eyes
     ctx.fillStyle = "#593849";
     const eyeOffset = size * 0.23;
