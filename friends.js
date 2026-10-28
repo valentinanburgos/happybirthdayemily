@@ -14,13 +14,13 @@
 const friends = [
   {
     id: "friend-1",
-    name: "Friend One",
-    message: `Emily, one of my favorite things about you is [what you love about her]. I'll always remember [a favorite memory]. I'm so lucky to have you in my life. Happy birthday! ♡`,
+    name: "Matthew",
+    message: `Emily, you are so altruistic, potential, and beautiful! I love you pookie and wish you nothing but success. I'll always cherish our memories from going to Rapids together. Happy birthday queen! ♡`,
     animal: {
-      name: "Bunny",
-      reason: "Because you're sweet, thoughtful, and ridiculously adorable.",
+      name: "Cheetah",
+      reason: "Because you're fierce, stylish, and cool.",
       image: "assets/animals/friend-1.svg",
-      alt: "A bunny chosen to represent Emily"
+      alt: "A cheetah chosen to represent Emily"
     },
     flowerThreshold: 3
   },
