@@ -26,11 +26,15 @@ const friends = [
   },
   {
     id: "friend-2",
-    name: "Friend Two",
-    message: `Emily, you make every room brighter by [something special about her]. Thank you for being the kind of friend who [something she does]. Love you lots! ♡`,
+    name: "Liz",
+    message: `Emily, you're so silly, SUPER PRETTY, and genuine. 
+    Happy birthday my pookie wooskie trooskie dooskie. I thank God 
+    for placing you in my life, you are very dear and special to me. 
+    I wish you the very best on any and every endeavor of life. May 
+    God continue to bless you for many more years to come, te amo pookie. ♡`,
     animal: {
-      name: "Cat",
-      reason: "Because of your [funny or sweet reason here].",
+      name: "Calico cat",
+      reason: "Because you're unique, whimsical, and bold.",
       image: "assets/animals/friend-2.svg",
       alt: "A cat chosen to represent Emily"
     },
