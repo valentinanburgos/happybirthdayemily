@@ -274,6 +274,7 @@ function drawSnakePart(part, index) {
       ctx.beginPath();
       ctx.arc(eye.x, eye.y, eyeRadius, 0, Math.PI * 2);
       ctx.fill();
+    });
   }
 }
 
