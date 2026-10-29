@@ -243,35 +243,39 @@ function drawSnakePart(part, index) {
   const y = part.y * cell + pad;
   const size = cell - pad * 2;
 
-  // Soft, rounded pink body
+  // Pink, rounded snake body
   ctx.fillStyle = index === 0 ? "#d96b9a" : "#e98ab0";
   ctx.beginPath();
   ctx.roundRect(x, y, size, size, 7);
   ctx.fill();
 
-    // Two simple dark eyes
-    ctx.fillStyle = "#593849";
+  // Two simple eyes on the head only
+  if (index === 0) {
+    const cx = x + size / 2;
+    const cy = y + size / 2;
     const eyeOffset = size * 0.23;
     const eyeRadius = 1.5;
+
+    ctx.fillStyle = "#593849";
 
     let eye1, eye2;
 
     if (direction.x !== 0) {
+      // Moving left or right: eyes above and below center
       eye1 = { x: cx, y: cy - eyeOffset };
       eye2 = { x: cx, y: cy + eyeOffset };
     } else {
+      // Moving up or down: eyes to the left and right
       eye1 = { x: cx - eyeOffset, y: cy };
       eye2 = { x: cx + eyeOffset, y: cy };
     }
 
-    [eye1, eye2].forEach(eye => {
+    [eye1, eye2].forEach((eye) => {
       ctx.beginPath();
       ctx.arc(eye.x, eye.y, eyeRadius, 0, Math.PI * 2);
       ctx.fill();
-    });
   }
 }
-
 
   function draw() {
     ctx.clearRect(0, 0, canvas.width, canvas.height);
